@@ -5,7 +5,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   // 🔐 Spotify Config
-  const CLIENT_ID = "5a5b6a6516714068a6c69530a8acfed8"; // <-- yaha apna daal
+  const CLIENT_ID = process.env.SPOTIFY_CLIENT_ID; // <-- yaha apna daal
   const REDIRECT_URI = "https://aiplaylistspotify.netlify.app/callback"; //https://aiplaylistspotify.netlify.app/callback
 
   const loginWithSpotify = () => {
