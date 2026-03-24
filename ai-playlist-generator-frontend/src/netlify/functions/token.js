@@ -21,6 +21,8 @@ export async function handler(event) {
   });
 
   const data = await response.json();
+  console.log("CLIENT ID:", process.env.SPOTIFY_CLIENT_ID);
+console.log("SECRET:", process.env.SPOTIFY_CLIENT_SECRET);
 
   return {
     statusCode: 200,
