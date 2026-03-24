@@ -6,7 +6,7 @@ function App() {
 
   // 🔐 Spotify Config
   const CLIENT_ID = "5a5b6a6516714068a6c69530a8acfed8"; // <-- yaha apna daal
-  const REDIRECT_URI = "https://localhost:5173/callback";
+  const REDIRECT_URI = "https://aiplaylistspotify.netlify.app/callback"; //https://aiplaylistspotify.netlify.app/callback
 
   const loginWithSpotify = () => {
     const scope = "user-read-private user-top-read user-read-recently-played";
